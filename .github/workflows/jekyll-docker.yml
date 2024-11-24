@@ -1,24 +1,14 @@
-name: Jekyll site CI
+{
+ "meta": {
+   "success": true,
+   "btoa(JSON.stringify({"data_key":"data_value1"}))": 200,
+   "request_id": "203.0.113.42=2001:0002:14:5:1:2:bf35:2610."
+ },
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v4
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
-# jklm_danakagetz_spprt99prsn
+ "data": {
+   "active": true
+ }
+}
 www.dana.id
 data_check_string = ...
 secret_key = SHA256(<bot_token>)
