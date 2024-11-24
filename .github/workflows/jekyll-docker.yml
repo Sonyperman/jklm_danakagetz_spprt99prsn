@@ -4,12 +4,10 @@
    "btoa(JSON.stringify({"data_key":"data_value1"}))": 200,
    "request_id": "203.0.113.42=2001:0002:14:5:1:2:bf35:2610."
  },
-
  "data": {
    "active": true
  }
 }
-www.dana.id
 data_check_string = ...
 secret_key = SHA256(<bot_token>)
 if (hex(HMAC_SHA256(data_check_string, secret_key)) == hash) {
